@@ -35,7 +35,13 @@ if (navigator.geolocation)
         L.marker([lat, lng])
           .addTo(map)
           .bindPopup(
-            L.popup({ maxWidth: 250, minwidth: 100, autoClose: false })
+            L.popup({
+              maxWidth: 250,
+              minwidth: 100,
+              autoClose: false,
+              closeOnClick: false,
+              className: 'running-popup',
+            })
           )
           .openPopup();
       });
