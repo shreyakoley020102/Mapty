@@ -53,6 +53,9 @@ class App {
   _newWorkout() {}
 }
 
+const app = new App();
+app._getPosition();
+
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
