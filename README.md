@@ -1,2 +1,2 @@
 # Mapty
-know your workout chart
+Make your own workout map
