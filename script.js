@@ -113,9 +113,7 @@ class App {
   _newWorkout(e) {
     e.preventDefault();
 
-    //Clear input fields
-    inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value =
-      '';
+    //Render workout on map as marker
     const { lat, lng } = this.#mapEvent.latlng;
     L.marker([lat, lng])
       .addTo(this.#map)
@@ -130,6 +128,10 @@ class App {
       )
       .setPopupContent('Workout')
       .openPopup();
+
+    //Hide Form + Clear input fields
+    inputDistance.value = inputDuration.value = inputCadence.value = inputElevation.value =
+      '';
   }
 }
 
