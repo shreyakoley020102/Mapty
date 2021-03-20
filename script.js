@@ -15,7 +15,7 @@ let map, mapEvent;
 
 class Workout {
   date = new Date();
-  id = (new Date() + '').slice(-10);
+  id = (Date.now() + '').slice(-10);
 
   constructor(coords, distance, duration) {
     // this.date=...
