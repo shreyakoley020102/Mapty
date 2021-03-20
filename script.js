@@ -26,6 +26,10 @@ class Workout {
   }
 }
 
+class Running extends Workout {
+  constructor(coords, distance, duration, cadence)
+}
+
 class App {
   #map;
   #mapEvent;
