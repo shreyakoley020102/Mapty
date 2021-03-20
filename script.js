@@ -27,7 +27,17 @@ class Workout {
 }
 
 class Running extends Workout {
-  constructor(coords, distance, duration, cadence)
+  constructor(coords, distance, duration, cadence) {
+    super(coords, distance, duration);
+    this.cadence = cadence;
+  }
+}
+
+class Cycling extends Workout {
+  constructor(coords, distance, duration, elevationGain) {
+    super(coords, distance, duration);
+    this.elevationGain = elevationGain;
+  }
 }
 
 class App {
